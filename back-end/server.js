@@ -38,4 +38,7 @@ app.use("/api/users", users.routes);
 const photos = require("./photos.js");
 app.use("/api/photos", photos.routes);
 
+const comments = require("./comments.js");
+app.use("/api/comments", comments.routes);
+
 app.listen(3001, () => console.log('Server listening on port 3001!'));
